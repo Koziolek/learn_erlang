@@ -14,6 +14,5 @@
 
 simpleList() ->
   L = [1, 2, 3],
-  lists:foreach(show, L);
+  lists:foreach(io:format("So what ~p ~n", [L]) , L).
 
-show(X) -> io:format("So what ~p ~n", [X]) end.
